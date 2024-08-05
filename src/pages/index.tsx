@@ -71,7 +71,7 @@ export const getStaticProps: GetStaticProps = async () => {
       "title": "Ad Banner 1",
       "description": "This is the first ad banner.",
       "cta": "Learn More",
-      "image": "/images/img1.jpg",
+      "image": "/public/images/img1.jpg",
       "background": "#606060",
       "imageWidth": 600,
       "imageHeight": 300
@@ -80,7 +80,7 @@ export const getStaticProps: GetStaticProps = async () => {
       "title": "Ad Banner 2",
       "description": "This is the second ad banner.",
       "cta": "Buy Now",
-      "image": "/images/img2.jpg",
+      "image": "/public/images/img2.jpg",
       "background": "#BEBEBE",
       "imageWidth": 600,
       "imageHeight": 300
@@ -89,7 +89,7 @@ export const getStaticProps: GetStaticProps = async () => {
       "title": "Ad Banner 3",
       "description": "This is the third ad banner.",
       "cta": "Sign Up",
-      "image": "/images/img3.jpg",
+      "image": "/public/images/img3.jpg",
       "background": "#D8D8D8",
       "imageWidth": 600,
       "imageHeight": 300

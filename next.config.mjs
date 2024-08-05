@@ -1,4 +1,5 @@
-const nextConfig = {
+// next.config.mjs
+export default {
   output: 'export',
   images: {
     unoptimized: true,
@@ -6,5 +7,3 @@ const nextConfig = {
   assetPrefix: process.env.NODE_ENV === 'production' ? '/banner-deploy/' : '',
   basePath: process.env.NODE_ENV === 'production' ? '/banner-deploy' : '',
 };
-
-module.exports = nextConfig;
