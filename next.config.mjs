@@ -1,8 +1,11 @@
-// next.config.js
-const isProd = process.env.NODE_ENV === 'production'
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/banner-deploy/' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/banner-deploy' : '',
+};
 
-export default {
-  assetPrefix: isProd ? '/banner-deploy/' : '',
-  basePath: isProd ? '/banner-deploy' : '',
-  trailingSlash: true,
-}
+module.exports = nextConfig;
