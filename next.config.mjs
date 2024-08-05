@@ -1,7 +1,3 @@
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
-
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
   images: {
@@ -11,4 +7,4 @@ const nextConfig = {
   basePath: process.env.NODE_ENV === 'production' ? '/banner-deploy' : '',
 };
 
-export default nextConfig;
+module.exports = nextConfig;
