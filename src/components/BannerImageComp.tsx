@@ -7,13 +7,15 @@ interface BannerImageCompProps {
   cta: string;
   image: string;
   background: string;
+  imageWidth: string;
+  imageHeight: string; 
   onEdit: () => void;
 }
 
 const BannerImageComp: React.FC<BannerImageCompProps> = ({ title, description, cta, image, background, onEdit }) => {
   return (
     <div className={styles.banner} style={{ background: background }}>
-      <img src={image} alt={title} className={styles.image} />
+      <img src={image} alt={title} width={600}  height={300} className={styles.image} />
       <div className={styles.content}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.description}>{description}</p>

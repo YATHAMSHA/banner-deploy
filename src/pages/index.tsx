@@ -12,6 +12,8 @@ interface HomePageProps {
     cta: string;
     image: string;
     background: string;
+    imageWidth: string;
+    imageHeight: string; 
   }[];
 }
 
@@ -45,6 +47,8 @@ const HomePage: React.FC<HomePageProps> = ({ ads: initialAds }) => {
           cta={ad.cta}
           image={ad.image}
           background={ad.background}
+          imageWidth={ad.imageWidth}
+          imageHeight={ad.imageHeight}
           onEdit={() => handleEdit(index)}
         />
       ))}
